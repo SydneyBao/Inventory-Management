@@ -382,7 +382,6 @@ export default function Home() {
         open={signInOpen}
         onClose={handleSignInClose}
         aria-labelledby="sign-in-modal-title"
-        aria-describedby="sign-in-modal-description"
       >
         <Box sx={[style.modal, {textAlign: 'center'}]}>
           <Typography id="sign-in-modal-title" variant="h5">
@@ -444,11 +443,10 @@ export default function Home() {
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby="add-item-modal-title"
       >
         <Box sx={style.modal}>
-          <Typography variant="h6" component="h2" gutterBottom textAlign={"center"}>
+          <Typography variant="h6" component="h2" gutterBottom textAlign={"center"} id="add-item-modal-title">
             Add New Item
           </Typography>
           <Grid container spacing={2}>
